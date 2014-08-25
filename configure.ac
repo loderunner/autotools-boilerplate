@@ -1,4 +1,4 @@
-AC_INIT([libecho], [1.0], [bug-report@address])
+AC_INIT([boilerplate], [1.0], [bug-report@address])
 AC_CONFIG_SRCDIR([src/main.c])
 AM_INIT_AUTOMAKE([-Wall -Werror])
 AC_PROG_CC
