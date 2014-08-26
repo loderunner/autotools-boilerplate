@@ -29,13 +29,17 @@ AM_INIT_AUTOMAKE([-Wall -Werror])
 
 # Check for programs
 AC_PROG_CC
+AC_PROG_INSTALL
 AM_PROG_AR
 
 # Initialize libtool
 LT_INIT
 
+# Check for headers
+AC_CHECK_HEADERS([stdio.h])
+
 # Configure output files
-AC_CONFIG_HEADER([config.h])
+AC_CONFIG_HEADER([include/config.h])
 AC_CONFIG_FILES([Makefile include/Makefile lib/Makefile src/Makefile tests/Makefile])
 AC_CONFIG_MACRO_DIR([m4])
 

@@ -22,7 +22,13 @@
 
 
 
-#include <stdio.h>
+// Include autoconf generated header
+#include "config.h"
+
+// Use config.h conditional defines
+#ifdef HAVE_STDIO_H
+    #include <stdio.h>
+#endif
 
 int main(int argc, char** argv)
 {
