@@ -1,5 +1,5 @@
 AM_CPPFLAGS = -I$(top_srcdir)/include
-AM_LDFLAGS = -L$(top_srcdir)/lib -lboilerplate
+LDADD = $(top_builddir)/lib/libboilerplate.la
 
 check_PROGRAMS = test test_fail
 test_SOURCES = test.c
