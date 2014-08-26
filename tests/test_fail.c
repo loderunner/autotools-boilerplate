@@ -2,5 +2,5 @@
 
 int main(int argc, char** argv)
 {
-    return bp_fail();
+    return bp_false();
 }

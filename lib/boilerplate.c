@@ -1,10 +1,10 @@
 
-int bp_success()
+int bp_true()
 {
     return 0;
 }
 
-int bp_fail()
+int bp_false()
 {
     return 1;
 }
